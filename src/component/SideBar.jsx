@@ -6,23 +6,25 @@ import styles from "../style";
 
 const Sidebar = () => {
   const { state } = useContext(ConfigContext);
+  const { dispatch } = useContext(ConfigContext);
   return (
     <motion.aside className={`w-[270px] bg-primary  min-h-screen fixed left-0 top-0 bottom-0 border-r border-r-softWhite transition-all ease-in duration-300 p-[30px]`}>
       <div className="py-8 text-center">
         <a className="text-white font-rubik font-bold text-[46px] italic">Yi-Dev</a>
       </div>
       
-        <ul className="my-[80px]">
+        <ul className="mb-[20px]">
           {state.language === "english" && (
             <>
               {navLinksEnglish.map((item, index) => (
                 <motion.li
-                  className={`font-poppins font-bold cursor-pointer text-[16px] text-white border-b border-b-softWhite leading-[45px]
+                  className={`flex items-center gap-[5px] font-poppins font-semibold cursor-pointer text-[16px] text-white border-b border-b-softWhite leading-[45px] hover:text-red-700
                   ` 
                 }
                   key={index}
                 >
-                  <a>{item.title}</a>
+                  {item.icon}
+                  <a onClick={() => {dispatch({ type: "page", page: item.title })} }>{item.title}</a>
                 </motion.li>
               ))}
             </>
@@ -36,7 +38,7 @@ const Sidebar = () => {
                   key={index}
                 >
                   {item.icon}
-                  <a>{item.title}</a>
+                  <a onClick={() => {dispatch({ type: "page", page: item.title })} }>{item.title}</a>
                   
                 </motion.li>
               ))}
