@@ -40,7 +40,7 @@ const Aboutme = () => {
                   {state.language === "english" && aboutMe.description}
                   {state.language === "spanish" && aboutMe.descripcion}
                 </p>
-                <motion.div className="w-full flex flex-col-reverse x md:flex-row mx-auto pt-9 px-4">
+                <motion.div className="w-full flex flex-col-reverse md:flex-row mx-auto pt-9 px-4">
                   <div className="w-full md:max-w-[40%] sm:px-2 py-8 my-auto">
                     <ul className="w-full flex flex-col ss:flex-row flex-wrap gap-3 items-center ">
                       {state.language === "english" && (
