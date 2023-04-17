@@ -16,7 +16,7 @@ const styles = {
 };
 
 export const layout = {
-  section:  ` flex fixed min-h-screen left-[270px] right-0 px-8 bg-[#151515]` ,
+  section:  ` flex fixed min-h-screen h-full left-0 md:left-[270px] right-0 px-4 md:px-8 bg-[#151515]` ,
   // section: `flex md:flex-row flex-col ${styles.paddingY}`,
   sectionReverse: `flex md:flex-row flex-col-reverse ${styles.paddingY}`,
 
