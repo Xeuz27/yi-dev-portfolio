@@ -1,6 +1,6 @@
 export const initialState = {
-  language: 'spanish',
-  page: 'home',
+  language: 'english',
+  page: 'Inicio',
     color: 'blue'
 };
 export const Reducer = (previousState, action) => {
@@ -14,6 +14,11 @@ export const Reducer = (previousState, action) => {
       return {
         ...previousState,
         color: action.color
+      };
+    case 'page':
+      return {
+        ...previousState,
+        page: action.page
       };
     
     default:
