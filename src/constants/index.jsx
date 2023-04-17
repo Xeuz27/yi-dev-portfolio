@@ -1,6 +1,5 @@
-import {GrReactjs, GrMysql } from 'react-icons/Gr';
+import {GrReactjs, GrMysql } from 'react-icons/gr';
 import {IoLogoCss3, IoLogoNodejs} from 'react-icons/io'
-import {DiJavascript1} from 'react-icons/di'
 import {TbBrandFramerMotion} from 'react-icons/tb'
 import {SiExpress, SiTailwindcss, SiGithub, SiFirebase, SiHtml5, SiJavascript} from 'react-icons/si'
 
