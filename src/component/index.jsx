@@ -1,6 +1,6 @@
 
 import Sidebar from "./SideBar";
-import IconComponent from "./iconComponent";
+import IconComponent from "./IconComponent";
 
 
 export {
