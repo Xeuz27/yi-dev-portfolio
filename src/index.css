@@ -172,5 +172,21 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 80px), 1fr));
 }
 .responsive-li{
-  width: clamp(190px, 100%,250px);
+  width: clamp(190px, 42%,250px);
+}
+.responsive-li-icons{
+  width: clamp(86px, 30%,160px);
+}
+
+#before-after::after{
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+width: 50px;
+margin-top: 8px;
+  background-color: inherit;
 }
