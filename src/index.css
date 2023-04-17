@@ -160,3 +160,17 @@ body {
   height: 1px;
   background: white;
 }
+.global-class-name{
+  color: #fff!important;
+  width: 64px;
+  height: 64px;
+
+} 
+.grid-responsive{
+  display: grid;
+    grid-auto-rows: 110px;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 80px), 1fr));
+}
+.responsive-li{
+  width: clamp(190px, 100%,250px);
+}
