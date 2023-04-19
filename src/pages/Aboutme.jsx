@@ -7,6 +7,7 @@ import { IconComponent } from "../component";
 
 const Aboutme = () => {
   const { state } = useContext(ConfigContext);
+  const colorstate = state.color;
   return (
     <>
       {(state.page === "About Me" || state.page === "Sobre mi") && (
@@ -20,7 +21,7 @@ const Aboutme = () => {
                   <h2>{state.page}</h2>
                   <div
                     id="before-after"
-                    className={`relative bg-${state.color}`}
+                    className={`relative bg-${colorstate}`}
                   ></div>
                 </div>
               </motion.div>
@@ -28,11 +29,17 @@ const Aboutme = () => {
                 <h3 className="text-2xl font-medium mb-7">
                   {state.language === "english" ? (
                     <>
-                      I'm {aboutMe.name} a <span>Web Developer</span>
+                      I'm {aboutMe.name} a{" "}
+                      <span className={`span-${colorstate}`}>
+                        Web Developer
+                      </span>
                     </>
                   ) : (
                     <>
-                      Soy {aboutMe.name} un <span>Desarrollador Web</span>
+                      Soy {aboutMe.name} un{" "}
+                      <span className={`span-${colorstate}`}>
+                        Desarrollador Web
+                      </span>
                     </>
                   )}
                 </h3>
@@ -47,7 +54,7 @@ const Aboutme = () => {
                         <>
                           {aboutMeEnglish.map((item) => (
                             <li
-                              className="mx-auto border-b-[1px] border-b-softWhite responsive-li "
+                              className={`mx-auto border-b-${colorstate} responsive-li`}
                               key={item.id}
                             >
                               <p>
@@ -61,7 +68,7 @@ const Aboutme = () => {
                         <>
                           {aboutMeSpanish.map((item) => (
                             <li
-                              className="mx-auto border-b-[1px] border-b-softWhite responsive-li "
+                              className={`mx-auto border-b-[1px] border-b-${colorstate} responsive-li`}
                               key={item.id}
                             >
                               <p>
@@ -72,6 +79,10 @@ const Aboutme = () => {
                         </>
                       )}
                     </ul>
+                    <div className="flex justify-evenly mt-6">
+                      <button className={`text-primary px-4 py-2 rounded-3xl font-poppins text-base font-semibold bg-${colorstate}`}> {state.language === 'english' ? 'Hire Me' : 'contrátame' } </button>
+                      <button className={`text-primary px-4 py-2 rounded-3xl font-poppins text-base font-semibold bg-${colorstate}`}> {state.language === 'english' ? 'See CV' : 'Ver CV'} </button>
+                    </div>
                   </div>
                   <div className="w-full md:max-w-[60%] px-4">
                     <ul className="w-full flex flex-wrap justify-center gap-4">
