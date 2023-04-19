@@ -1,7 +1,7 @@
 export const initialState = {
   language: 'english',
-  page: 'Inicio',
-    color: 'white'
+  page: 'Home',
+    color: 'violet'
 };
 export const Reducer = (previousState, action) => {
   switch (action.type) {
