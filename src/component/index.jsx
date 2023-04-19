@@ -1,7 +1,7 @@
 
 import Sidebar from "./SideBar";
 import IconComponent from "./IconComponent";
-import ConfigComponent from "./configComponent";
+import ConfigComponent from './ConfigComponent'
 
 
 
