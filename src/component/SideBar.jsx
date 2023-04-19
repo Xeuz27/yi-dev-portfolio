@@ -2,11 +2,12 @@ import React, { useContext } from "react";
 import { navLinksEnglish, navLinksSpanish } from "../constants";
 import { ConfigContext } from "../context/configContext";
 import { motion } from "framer-motion";
-import styles from "../style";
 
 const Sidebar = () => {
   const { state } = useContext(ConfigContext);
   const { dispatch } = useContext(ConfigContext);
+  const colorstate = state.color
+
   return (
     <motion.aside className={`w-[270px] bg-primary  min-h-screen fixed left-0 top-0 bottom-0 border-r border-r-softWhite transition-all ease-in duration-300 p-[30px]`}>
       <div className="py-8 text-center">
@@ -18,8 +19,7 @@ const Sidebar = () => {
             <>
               {navLinksEnglish.map((item, index) => (
                 <motion.li
-                  className={`flex items-center gap-[5px] font-poppins font-semibold cursor-pointer text-[16px] text-white border-b border-b-softWhite leading-[45px] hover:text-red-700
-                  ` 
+                  className={`flex items-center gap-[5px] font-poppins font-semibold cursor-pointer text-[16px] text-white border-b border-b-softWhite hover:translate-x-1 leading-[45px] text-${colorstate}` 
                 }
                   key={index}
                 >
@@ -33,7 +33,7 @@ const Sidebar = () => {
             <>
               {navLinksSpanish.map((item, index) => (
                 <motion.li
-                  className={`flex items-center gap-[5px] font-poppins font-semibold cursor-pointer text-[16px] text-white border-b border-b-softWhite leading-[45px] hover:text-red-700
+                  className={`flex items-center gap-[5px] font-poppins font-semibold cursor-pointer text-[16px] text-white border-b border-b-softWhite hover:translate-x-1 leading-[45px] text-${colorstate}
                   `}
                   key={index}
                 >
