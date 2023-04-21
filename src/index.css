@@ -37,6 +37,14 @@ body {
 .responsive-li {
   width: clamp(190px, 42%, 250px);
 }
+.responsive-li-skills {
+  width: clamp(315px, 48%, 400px);
+}
+.Development-cuate {
+  height: 250px;
+  width: 100%;
+}
+
 
 
 /*--bg for before and afters and btns--*/
