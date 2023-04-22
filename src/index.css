@@ -40,6 +40,9 @@ body {
 .responsive-li-skills {
   width: clamp(315px, 48%, 400px);
 }
+.responsive-li-contact {
+  width: clamp(200px, 30%, 250px);
+}
 .Development-cuate {
   height: 250px;
   width: 100%;
