@@ -404,22 +404,22 @@ export const skills = [
 export const services = [
   {
     name: 'Web Development',
-    description: "I create amazing websites! I focus on user-friendly designs with interactive features. Let's create an outstanding online presence! #WebDeveloper #UserExperience #InteractiveDesign.",
+    description: "I create amazing websites! I focus on user-friendly designs with interactive features. Let's create an outstanding online presence! #WebDeveloper #UserExperience #InteractiveDesign",
     image: 'Development-cuate'
   },
   {
     name: 'SEO optimization',
-    description: "Maximize your website's SEO! Boost rankings, drive organic traffic, and enhance online visibility with my expert SEO optimization service. Let's grow your online presence and business with tailored strategies.",
+    description: "Maximize your website's SEO! Boost rankings, drive organic traffic, and enhance online visibility with my expert SEO optimization service. Let's grow your online presence and business with tailored strategies. #SEOOptimization #OrganicTraffic #OnlineVisibility #BusinessGrowth",
     image: 'SEO-pana'
   },
   {
     name: 'Photo and Video editing',
-    description: "Transform your visual content with my professional photo and video editing service! From retouching and enhancing photos to creating stunning videos, I'll bring your vision to life. Let's create captivating visuals that make a lasting impression and elevate your brand!",
+    description: "Transform your visual content with my professional photo and video editing service! From retouching and enhancing photos to creating stunning videos, I'll bring your vision to life. Let's create captivating visuals that make a lasting impression and elevate your brand! #PhotoEditing #VideoEditing #VisualTransformation #BrandElevation",
     image: 'Fashion_blogging-rafiki'
   },
   {
     name: 'Web Maintenance',
-    description: "Ensure a smooth website with my reliable web maintenance service! From updates to bug fixes, I'll handle the technical details so you can focus on your business. Let's keep your site secure and up-to-date for a seamless online experience!",
+    description: "Ensure a smooth website with my reliable web maintenance service! From updates to bug fixes, I'll handle the technical details so you can focus on your business. Let's keep your site secure and up-to-date for a seamless online experience! #WebMaintenance #ReliableService #Updates #BugFixes #SecureWebsite",
     image: 'Under_construction-amico'
   }
 ]
