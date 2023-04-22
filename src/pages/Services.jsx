@@ -30,7 +30,6 @@ const Services = () => {
               </div>
               <div className="w-full pt-9 px-4">
                 <ul
-                  id="skills-ul"
                   className="w-full flex flex-wrap justify-around gap-4 gap-y-16"
                 >
                   <IKContext publicKey={publicKey} urlEndpoint={urlEndpoint}>
