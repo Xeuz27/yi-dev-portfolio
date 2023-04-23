@@ -8,9 +8,9 @@ import { useForm } from "../hooks/UseForm";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  const serviceID = import.meta.env.VITE_SERVICE_ID;
-  const templateID = import.meta.env.VITE_TEMPLATE_ID;
-  const publicKey = import.meta.env.VITE_PUBLIC_KEY;
+  const serviceID = import.meta.env.VITE_SERVICE_ID || process.env.VITE_SERVICE_ID;
+  const templateID = import.meta.env.VITE_TEMPLATE_ID || process.env.VITE_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_PUBLIC_KEY || process.env.VITE_PUBLIC_KEY;
   const form = useRef();
 
   const formData = {
