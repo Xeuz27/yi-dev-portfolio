@@ -8,6 +8,9 @@ import { useForm } from "../hooks/UseForm";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const serviceID = import.meta.env.VITE_SERVICE_ID;
+  const templateID = import.meta.env.VITE_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_PUBLIC_KEY;
   const form = useRef();
 
   const formData = {
@@ -23,25 +26,19 @@ const Contact = () => {
 
   const handlesubmit = (e) => {
     e.preventDefault();
-    console.log(process.env.REACT_APP_PUBLIC_KEY)
-    emailjs
-      .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
-        form.current,
-        process.env.REACT_APP_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          console.log(result)
-          alert('email was sent succesfully');
-          onResetForm();
-        },
-        (error) => {
-          alert('something happened, please try again later')
-          console.log(error.text);
-        }
-      );
+    console.log(serviceID, templateID, publicKey);
+    emailjs.sendForm(serviceID, templateID, form.current, publicKey)
+    .then(
+      (result) => {
+        console.log(result);
+        alert("email was sent succesfully");
+        onResetForm();
+      },
+      (error) => {
+        alert("something happened, please try again later");
+        console.log(error.text);
+      }
+    );
   };
   return (
     <>
