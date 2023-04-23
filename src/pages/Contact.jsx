@@ -26,7 +26,6 @@ const Contact = () => {
 
   const handlesubmit = (e) => {
     e.preventDefault();
-    console.log(serviceID, templateID, publicKey);
     emailjs.sendForm(serviceID, templateID, form.current, publicKey)
     .then(
       (result) => {
