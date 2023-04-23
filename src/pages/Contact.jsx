@@ -26,10 +26,10 @@ const Contact = () => {
     console.log(process.env.REACT_APP_PUBLIC_KEY)
     emailjs
       .sendForm(
-        proccess.env.REACT_APP_SERVICE_ID,
-        proccess.env.REACT_APP_TEMPLATE_ID,
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
         form.current,
-        proccess.env.REACT_APP_PUBLIC_KEY
+        process.env.REACT_APP_PUBLIC_KEY
       )
       .then(
         (result) => {
