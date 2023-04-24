@@ -43,6 +43,11 @@ body {
 .responsive-li-contact {
   width: clamp(200px, 30%, 250px);
 }
+.responsive-li-portfolio {
+  width: clamp(280px, 45%, 320px);
+}
+
+
 .Development-cuate {
   height: 250px;
   width: 100%;
