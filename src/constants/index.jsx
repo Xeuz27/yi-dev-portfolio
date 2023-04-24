@@ -2,7 +2,11 @@ import {GrReactjs, GrMysql } from 'react-icons/gr';
 import {IoLogoCss3, IoLogoNodejs} from 'react-icons/io'
 import {TbBrandFramerMotion} from 'react-icons/tb'
 import {SiExpress, SiTailwindcss, SiGithub, SiFirebase, SiHtml5, SiJavascript} from 'react-icons/si'
-
+import portucomprausa from '../assets/screencapture-portucomprausa-vercel-app-2023-04-24-15_13_41.png'
+import hoobank from '../assets//screencapture-hoobank-modern-ui-landing-page-vercel-app-2023-04-24-15_15_51.png'
+import edgeledger from '../assets/screencapture-xeuz27-github-io-edgeledger-website-2023-04-24-15_16_30.png'
+import montilla from '../assets/screencapture-xeuz27-github-io-montillacoffeshop-2023-04-24-15_14_44.png'
+// import portucomprausa from '../assets/screencapture-portucomprausa-vercel-app-2023-04-24-15_13_41.png'
 export const navLinksEnglish = [
   {
     id: "Home",
@@ -421,5 +425,32 @@ export const services = [
     name: 'Web Maintenance',
     description: "Ensure a smooth website with my reliable web maintenance service! From updates to bug fixes, I'll handle the technical details so you can focus on your business. Let's keep your site secure and up-to-date for a seamless online experience! #WebMaintenance #ReliableService #Updates #BugFixes #SecureWebsite",
     image: 'Under_construction-amico'
+  }
+]
+
+export const portfolio = [
+  {
+    name: 'Por Tu Compra USA',
+    description: 'business app created with react, firebase, nodejs and mysql. This app is made for administrators of a door to door business type to allow clients to search their personal package, see its status and what products are inside of the package that is being sent to them',
+    image: portucomprausa,
+    link: 'https://portucomprausa.vercel.app/#/home'
+  },
+  {
+    name: 'Hoobank modern UI',
+    description: 'modern ui for a bank landing page, was made using react and css with tailwindcss',
+    image: hoobank,
+    link: 'https://hoobank-modern-ui-landing-page.vercel.app'
+  },
+  {
+    name: 'edgeledger Lawyer Firm',
+    description: 'landing page for educational purposes for a lawyer firm, was made purely with html, css and Javascript',
+    image: edgeledger,
+    link: 'https://xeuz27.github.io/edgeledger-website/'
+  },
+  {
+    name: 'Montilla Coffeeshop',
+    description: 'landing page template for a coffeeshop, made with pure html css and Javascript',
+    image: montilla,
+    link: 'https://xeuz27.github.io/montillacoffeshop/'
   }
 ]
