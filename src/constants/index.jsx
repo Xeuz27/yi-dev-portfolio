@@ -6,7 +6,7 @@ import portucomprausa from '../assets/screencapture-portucomprausa-vercel-app-20
 import hoobank from '../assets//screencapture-hoobank-modern-ui-landing-page-vercel-app-2023-04-24-15_15_51.png'
 import edgeledger from '../assets/screencapture-xeuz27-github-io-edgeledger-website-2023-04-24-15_16_30.png'
 import montilla from '../assets/screencapture-xeuz27-github-io-montillacoffeshop-2023-04-24-15_14_44.png'
-// import portucomprausa from '../assets/screencapture-portucomprausa-vercel-app-2023-04-24-15_13_41.png'
+import sumz from '../assets/screencapture-sumz-ai-vercel-app-2023-04-24-21_36_46.png'
 export const navLinksEnglish = [
   {
     id: "Home",
@@ -440,6 +440,12 @@ export const portfolio = [
     description: 'modern ui for a bank landing page, was made using react and css with tailwindcss',
     image: hoobank,
     link: 'https://hoobank-modern-ui-landing-page.vercel.app'
+  },
+  {
+    name: 'Sumz AI',
+    description: 'react project making use of react-redux to fetch a rapidAPI endpoint that substract info from an article in a webpage and then summarizes it using Artificial intelligence, css made with tailwindCSS',
+    image: sumz,
+    link: 'https://sumz-ai.vercel.app/'
   },
   {
     name: 'edgeledger Lawyer Firm',
