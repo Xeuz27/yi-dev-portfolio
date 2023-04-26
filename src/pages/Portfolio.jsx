@@ -11,7 +11,7 @@ const Portfolio = () => {
       {(state.page === "Portfolio" || state.page === "Proyectos") && (
         <>
           <div
-            className={` ${layout.section} py-12 overflow-y-scroll text-white`}
+            className={`${layout.section} py-12 overflow-y-scroll text-white`}
           >
             <div className="container max-w-[1080px] m-auto">
               <div className="flex flex-wrap xs:pl-4 sm:pl-8 md:pl-0 lg:pl-8">
@@ -32,6 +32,8 @@ const Portfolio = () => {
                       className="responsive-li-portfolio"
                     >
                       <a
+                      target="_blank"
+                      rel="noopener"
                         href={`${item.link}`}
                       >
 
@@ -39,7 +41,7 @@ const Portfolio = () => {
                             className="block w-full h-48 object-cover"
                             src={`${item.image}` }
                           />
-                          <div className="bg-slate-800 p-5">
+                          <div className="bg-zinc-800 rounded-b-lg p-5">
                             <h5 className="font-poppins text-lg mb-4">
                               {item.name}
                             </h5>
