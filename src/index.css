@@ -44,7 +44,7 @@ body {
   width: clamp(200px, 30%, 250px);
 }
 .responsive-li-portfolio {
-  width: clamp(280px, 45%, 320px);
+  width: clamp(285px, 45%, 320px);
 }
 
 
@@ -62,7 +62,7 @@ body {
 }
 .bg-blue:hover {
   color: #fff;
-  filter: brightness(0.8);
+  filter: brightness(0.7);
   background-color: var(--color-config-blue);
 }
 .bg-violet {
@@ -70,8 +70,8 @@ body {
   background-color: var(--color-config-violet);
 }
 .bg-violet:hover {
-  color: #222222;
-  filter: brightness(0.8);
+  
+  filter: brightness(0.7);
   background-color: var(--color-config-violet);
 }
 .bg-red {
@@ -79,7 +79,6 @@ body {
   background-color: var(--color-config-red);
 }
 .bg-red:hover {
-  color: #222222;
   filter: brightness(0.8);
   background-color: var(--color-config-red);
 }
@@ -88,14 +87,14 @@ body {
 }
 .bg-green:hover {
   color: #fff;
-  filter: brightness(0.8);
+  filter: brightness(0.7);
   background-color: var(--color-config-green);
 }
 .bg-orange {
+  color: #fff;
   background-color: var(--color-config-orange);
 }
 .bg-orange:hover {
-  color: #fff;
   filter: brightness(0.8);
   background-color: var(--color-config-orange);
 }
@@ -194,6 +193,11 @@ body {
   color: white;
   -webkit-animation: spin 3s linear infinite;
   animation: spin 3s linear infinite;
+}
+.iconmenu{
+  width: 32px;
+  height: 32px;
+  color: white;
 }
 @-webkit-keyframes spin {
   0% {
@@ -296,4 +300,14 @@ body {
 .padd-15 {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+#sidebar-btn:hover  div:first-child {
+  transform: translateX(-4px) rotate(-38deg)
+}
+#sidebar-btn:hover  div:nth-child(2) {
+  opacity: 0;
+}
+#sidebar-btn:hover  div:nth-child(3) {
+  transform: translateX(-4px) rotate(38deg);
 }
