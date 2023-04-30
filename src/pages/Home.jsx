@@ -4,7 +4,7 @@ import { ConfigContext } from "../context/configContext";
 import { AnimatePresence, motion } from "framer-motion";
 import styles, { layout } from "../style";
 import profilepicture from "../assets/profile-pic.png";
-import githublogo from "../assets/github-mark-white.png";
+import { GrGithub } from "react-icons/gr";
 
 const Home = () => {
   const { state } = useContext(ConfigContext);
@@ -26,17 +26,17 @@ const Home = () => {
                   alt="profile picture"
                 />
               </motion.div>
-              <h1 className="text-white font-poppins text-4xl text-center">
+              <h1 className="text-white font-poppins text-5xl text-center">
                 {" "}
                 Jesus Gutierrez{" "}
               </h1>
-              <p className=" text-white  font-poppins text-lg text-center">
-                desarrollador Front-End
+              <p className=" text-white  font-poppins text-2xl text-center">
+                {state.language === 'english' ? 'Front-End Developer':'Desarrollador Front-End'}
               </p>
               <motion.ul className="mt-5 flex justify-center mx-auto text-center text-white">
                 <li>
                   <a href="https://github.com/Xeuz27">
-                    <img className="w-6 h-6" src={githublogo} />
+                    <GrGithub size={42} />
                   </a>
                 </li>
               </motion.ul>
