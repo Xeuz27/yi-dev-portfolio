@@ -17,8 +17,8 @@ const Aboutme = () => {
           >
             <motion.div className="container max-w-7xl m-auto">
               <motion.div className="flex flex-wrap">
-                <div className="text-inherit font-rubik font-semibold text-4xl my-8 pl-4">
-                  <h2>{state.page}</h2>
+                <div className="text-inherit font-rubik font-semibold text-5xl my-8 pl-4">
+                  <h2>{state.language === 'english' ? 'About Me' : 'Sobre mi'}</h2>
                   <div
                     id="before-after"
                     className={`relative bg-${colorstate}`}
@@ -26,7 +26,7 @@ const Aboutme = () => {
                 </div>
               </motion.div>
               <motion.div className="flex flex-wrap px-4 md:px-8">
-                <h3 className="text-2xl font-medium mb-7">
+                <h3 className="text-3xl font-medium mb-7">
                   {state.language === "english" ? (
                     <>
                       I'm {aboutMe.name} a{" "}
@@ -43,11 +43,11 @@ const Aboutme = () => {
                     </>
                   )}
                 </h3>
-                <p className="text-inherit font-poppins text-base leading-7">
+                <p className="text-inherit font-poppins text-base leading-8">
                   {state.language === "english" && aboutMe.description}
                   {state.language === "spanish" && aboutMe.descripcion}
                 </p>
-                <motion.div className="w-full flex flex-col-reverse md:flex-row mx-auto pt-9 px-4">
+                <motion.div className="w-full flex flex-col-reverse md:flex-row mx-auto pt-10 px-4">
                   <div className="w-full md:max-w-[40%] sm:px-2 py-8 my-auto">
                     <ul className="w-full flex flex-col ss:flex-row flex-wrap gap-3 items-center ">
                       {state.language === "english" && (
@@ -79,13 +79,13 @@ const Aboutme = () => {
                         </>
                       )}
                     </ul>
-                    <div className="flex justify-evenly mt-6">
+                    <div className="flex justify-evenly mt-6 pt-3">
                       <button className={`text-primary px-4 py-2 rounded-3xl font-poppins text-base font-semibold bg-${colorstate}`}> {state.language === 'english' ? 'Hire Me' : 'contrátame' } </button>
                       <button className={`text-primary px-4 py-2 rounded-3xl font-poppins text-base font-semibold bg-${colorstate}`}> {state.language === 'english' ? 'See CV' : 'Ver CV'} </button>
                     </div>
                   </div>
                   <div className="w-full md:max-w-[60%] px-4">
-                    <ul className="w-full flex flex-wrap justify-center gap-4">
+                    <ul className="w-full flex flex-wrap justify-center gap-4 gap-y-8 pb-4">
                       {skills.map((item) => (
                         <li
                           key={item.name}
