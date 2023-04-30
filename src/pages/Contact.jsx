@@ -48,8 +48,8 @@ const Contact = () => {
           >
             <div className="container max-w-[1080px] m-auto">
               <div className="flex flex-wrap xs:pl-4 sm:pl-0 md:pl-0 lg:pl-8">
-                <div className="text-inherit font-rubik font-semibold text-4xl my-8 ">
-                  <h2>{state.page}</h2>
+                <div className="text-inherit font-rubik font-semibold text-5xl my-8 ">
+                <h2>{state.language === 'english' ? 'Contact me' : 'Contáctame'}</h2>
                   <div
                     id="before-after"
                     className={`relative bg-${colorstate}`}
@@ -59,24 +59,24 @@ const Contact = () => {
 
               <div className="w-full pt-9 px-4">
                 <div className="row">
-                  <ul className="flex justify-center flex-wrap">
+                  <ul className="flex justify-center flex-wrap gap-y-8">
                     <li className="responsive-li-contact flex gap-y-3 flex-col items-center justify-center">
                       <GoLocation style={{ width: "60px", height: "60px" }} />
-                      <span>Address</span>
+                      <span>{state.language === 'english' ? 'Address': 'Localidad' }</span>
                       <p>Maracaibo-Zulia. Venezuela</p>
                     </li>
                     <li className="responsive-li-contact flex gap-y-3 flex-col items-center justify-center">
                       <BsTelephoneInboundFill
                         style={{ width: "60px", height: "60px" }}
                       />
-                      <span>Call me on</span>
+                      <span>{state.language === 'english' ? 'Call me on': 'Contáctame' }</span>
                       <p>+58 414 617-2019</p>
                     </li>
                     <li className="responsive-li-contact flex gap-y-3 flex-col items-center justify-center">
                       <HiOutlineMail
                         style={{ width: "60px", height: "60px" }}
                       />
-                      <span>Email</span>
+                      <span>{state.language === 'english' ? 'Email': 'Correo Electronico' }</span>
                       <p>Jesusg.1301.jg@gmail.com</p>
                     </li>
                   </ul>
@@ -93,7 +93,7 @@ const Contact = () => {
                           <input
                             type="text"
                             className="form-control bg-primary"
-                            placeholder="Name*"
+                            placeholder={`${state.language === 'english' ? 'Name*' : 'Nombre*'}`}
                             name="name"
                             value={name}
                             onChange={onInputChange}
@@ -105,7 +105,7 @@ const Contact = () => {
                           <input
                             type="email"
                             className="form-control bg-primary"
-                            placeholder="Email*"
+                            placeholder={`${state.language === 'english' ? 'Email*' : 'Correo Electronico*'}`}
                             name="email"
                             value={email}
                             onChange={onInputChange}
@@ -119,7 +119,7 @@ const Contact = () => {
                           <input
                             type="text"
                             className="form-control bg-primary"
-                            placeholder="Subject*"
+                            placeholder={`${state.language === 'english' ? 'Subject*' : 'Asunto*'}`}
                             name="subject"
                             value={subject}
                             onChange={onInputChange}
@@ -132,7 +132,7 @@ const Contact = () => {
                         <div className="form-group">
                           <textarea
                             className="form-control bg-primary"
-                            placeholder="Your Message*"
+                            placeholder={`${state.language === 'english' ? 'Your Message*' : 'Tu Mensaje*'}`}
                             name="message"
                             value={message}
                             onChange={onInputChange}
@@ -144,9 +144,9 @@ const Contact = () => {
                       <div className="col-12 padd-15">
                         <button
                           onClick={handlesubmit}
-                          className={`btn rounded-3xl bg-${colorstate}`}
+                          className={`block btn rounded-3xl bg-${colorstate} font-poppins text-base font-semibold mx-auto`}
                         >
-                          Send Message
+                          {state.language === 'english' ? 'Send Message':'Enviar Mensaje'}
                         </button>
                       </div>
                     </div>

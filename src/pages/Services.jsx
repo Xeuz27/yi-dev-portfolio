@@ -20,8 +20,8 @@ const Services = () => {
           >
             <div className="container max-w-[1080px] m-auto">
               <div className="flex flex-wrap xs:pl-4 sm:pl-0 md:pl-0 lg:pl-8">
-                <div className="text-inherit font-rubik font-semibold text-4xl my-8 ">
-                  <h2>{state.page}</h2>
+                <div className="text-inherit font-rubik font-semibold text-5xl my-8 ">
+                <h2>{state.language === 'english' ? 'Services' : 'Servicios'}</h2>
                   <div
                     id="before-after"
                     className={`relative bg-${colorstate}`}
@@ -51,7 +51,7 @@ const Services = () => {
                         <h3 className="text-3xl mb-3 font-semibold">
                           {item.name}
                         </h3>
-                        <p className="text-lg lg:text-xl">{item.description}</p>
+                        <p className="leading-8 text-lg lg:text-xl">{item.description}</p>
                       </li>
                     ))}
                   </IKContext>

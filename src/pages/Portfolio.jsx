@@ -15,8 +15,8 @@ const Portfolio = () => {
           >
             <div className="container max-w-[1080px] m-auto">
               <div className="flex flex-wrap xs:pl-4 sm:pl-8 md:pl-0 lg:pl-8">
-                <div className="text-inherit font-rubik font-semibold text-4xl my-8 ">
-                  <h2>{state.page}</h2>
+                <div className="text-inherit font-rubik font-semibold text-5xl my-8 ">
+                  <h2>{state.language === 'english' ? 'Portfolio' : 'Proyectos'}</h2>
                   <div
                     id="before-after"
                     className={`relative bg-${colorstate}`}
@@ -25,7 +25,7 @@ const Portfolio = () => {
               </div>
 
               <div>
-                <ul className="w-full flex flex-wrap gap-5 justify-center px-6">
+                <ul className="w-full flex flex-wrap gap-5 gap-y-10 justify-center px-6">
                   {portfolio.map((item) => (
                     <li
                       key={`${item.name}`}
@@ -42,10 +42,10 @@ const Portfolio = () => {
                             src={`${item.image}` }
                           />
                           <div className="bg-zinc-800 rounded-b-lg p-5">
-                            <h5 className="font-poppins text-lg mb-4">
+                            <h5 className="font-poppins font-semibold text-2xl mb-4">
                               {item.name}
                             </h5>
-                            <p>{item.description}</p>
+                            <p className="text-lg font-medium leading-7">{item.description}</p>
         
                         </div>
                       </a>
