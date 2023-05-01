@@ -92,6 +92,7 @@ const Contact = () => {
                         <div className="form-group">
                           <input
                             type="text"
+                            required
                             className="form-control bg-primary"
                             placeholder={`${state.language === 'english' ? 'Name*' : 'Nombre*'}`}
                             name="name"
@@ -104,6 +105,7 @@ const Contact = () => {
                         <div className="form-group">
                           <input
                             type="email"
+                            required
                             className="form-control bg-primary"
                             placeholder={`${state.language === 'english' ? 'Email*' : 'Correo Electronico*'}`}
                             name="email"
@@ -118,6 +120,7 @@ const Contact = () => {
                         <div className="form-group">
                           <input
                             type="text"
+                            required
                             className="form-control bg-primary"
                             placeholder={`${state.language === 'english' ? 'Subject*' : 'Asunto*'}`}
                             name="subject"
@@ -131,6 +134,7 @@ const Contact = () => {
                       <div className="form-item col-12 padd-15">
                         <div className="form-group">
                           <textarea
+                            required
                             className="form-control bg-primary"
                             placeholder={`${state.language === 'english' ? 'Your Message*' : 'Tu Mensaje*'}`}
                             name="message"
