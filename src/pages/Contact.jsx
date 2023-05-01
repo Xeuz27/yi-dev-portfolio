@@ -26,18 +26,23 @@ const Contact = () => {
 
   const handlesubmit = (e) => {
     e.preventDefault();
-    emailjs.sendForm(serviceID, templateID, form.current, publicKey)
-    .then(
-      (result) => {
-        console.log(result);
-        alert("email was sent succesfully");
-        onResetForm();
-      },
-      (error) => {
-        alert("something happened, please try again later");
-        console.log(error.text);
-      }
-    );
+    if(name === '' || email === '' || subject === '' || message ===''){
+      state.language === 'english' ? alert('Please fill out the form'): alert('Por favor llene los campos')
+      return
+    } else {
+      emailjs.sendForm(serviceID, templateID, form.current, publicKey)
+      .then(
+        (result) => {
+          console.log(result);
+          alert("email was sent succesfully");
+          onResetForm();
+        },
+        (error) => {
+          alert("something happened, please try again later");
+          console.log(error.text);
+        }
+      );
+    }
   };
   return (
     <>
