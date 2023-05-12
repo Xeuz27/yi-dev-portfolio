@@ -236,20 +236,20 @@ body {
 *::-webkit-scrollbar-thumb:hover {
   background: #b3b3b3;
 }
-.shadow-blue:hover{
-  box-shadow: var(--color-config-blue) 0px -8px 90px -13px;
+.responsive-li-icons:hover .shadow-blue{
+  filter: drop-shadow( 0px 0px 5px var(--color-config-blue));
 }
-.shadow-green:hover{
-  box-shadow: var(--color-config-green) 0px -8px 90px -13px;
+.responsive-li-icons:hover .shadow-green{
+  filter: drop-shadow( 0px 0px 5px var(--color-config-green));
 }
-.shadow-violet:hover{
-  box-shadow: var(--color-config-violet) 0px -8px 90px -13px;
+.responsive-li-icons:hover .shadow-violet{
+  filter: drop-shadow( 0px 0px 5px var(--color-config-violet));
 }
-.shadow-orange:hover{
-  box-shadow: var(--color-config-orange) 0px -8px 90px -13px;
+.responsive-li-icons:hover .shadow-orange{
+  filter: drop-shadow( 0px 0px 5px var(--color-config-orange));
 }
-.shadow-red:hover{
-  box-shadow: var(--color-config-red) 0px -8px 90px -13px;
+.responsive-li-icons:hover .shadow-red{
+  filter: drop-shadow( 0px 0px 5px var(--color-config-red));
 }
 
 .contact-form {
@@ -261,6 +261,14 @@ body {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 50%;
+}
+@media screen and (max-width: 620px ) {
+  .contact-form .col-6 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
 }
 .contact-form .col-12 {
   -ms-flex: 0 0 100%;
@@ -302,12 +310,12 @@ body {
   padding-right: 15px;
 }
 
-#sidebar-btn:hover  div:first-child {
+#sidebar-btn.open  div:first-child {
   transform: translateX(-4px) rotate(-38deg)
 }
-#sidebar-btn:hover  div:nth-child(2) {
+#sidebar-btn.open  div:nth-child(2) {
   opacity: 0;
 }
-#sidebar-btn:hover  div:nth-child(3) {
+#sidebar-btn.open  div:nth-child(3) {
   transform: translateX(-4px) rotate(38deg);
 }
