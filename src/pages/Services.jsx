@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { ConfigContext } from "../context/configContext";
 import { layout } from "../style";
-import { services } from "../constants";
+import { services, servicios } from "../constants";
 import { IKContext, IKImage } from "imagekitio-react";
 
 const Services = () => {
@@ -33,7 +33,7 @@ const Services = () => {
                   className="w-full flex flex-wrap justify-around gap-4 gap-y-16"
                 >
                   <IKContext publicKey={publicKey} urlEndpoint={urlEndpoint}>
-                    {services.map((item) => (
+                    {state.language === 'english' ? <>{services.map((item) => (
                       <li
                         key={item.name}
                         className="font-poppins text-lg text-justify flex flex-col items-center responsive-li-skills"
@@ -53,7 +53,28 @@ const Services = () => {
                         </h3>
                         <p className="leading-8 text-lg lg:text-xl">{item.description}</p>
                       </li>
-                    ))}
+                    ))}</> :<>{servicios.map((item) => (
+                      <li
+                        key={item.name}
+                        className="font-poppins text-lg text-justify flex flex-col items-center responsive-li-skills"
+                      >
+                        <IKImage
+                          className={`${item.image}`}
+                          transformation={[{ height: "150", width: 600 }]}
+                          quantity="100"
+                          height="150"
+                          width="250"
+                          loading="lazy"
+                          lqip={{ active: true }}
+                          src={`${baseikURL}${item.image}-${colorstate}.svg`}
+                        />
+                        <h3 className="text-3xl mb-3 font-semibold">
+                          {item.name}
+                        </h3>
+                        <p className="leading-8 text-lg lg:text-xl">{item.description}</p>
+                      </li>
+                    ))}</> }
+                   
                   </IKContext>
                 </ul>
               </div>
