@@ -62,7 +62,7 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="w-full pt-9 px-4">
+              <div className="w-full pt-9 px-0 sm:px-4">
                 <div className="row">
                   <ul className="flex justify-center flex-wrap gap-y-8">
                     <li className="responsive-li-contact flex gap-y-3 flex-col items-center justify-center">
@@ -90,7 +90,7 @@ const Contact = () => {
                   <form
                     ref={form}
                     onSubmit={handlesubmit}
-                    className="contact-form padd-15"
+                    className="contact-form"
                   >
                     <div className="row flex flex-wrap">
                       <div className="form-item col-6 padd-15">
