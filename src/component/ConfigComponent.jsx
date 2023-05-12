@@ -30,8 +30,8 @@ const ConfigComponent = () => {
               <input className="cursor-pointer rounded-full w-8 h-8 bg-red appearance-none" onClick={() => {dispatch({type: 'color', color: 'red'})}} type="checkbox" />
             </div>
             <div className="flex justify-around">
-            <button className="rounded-full hover:bg-primary hover:text-white border-[1px] border-zinc-800 mt-2 py-1 px-3 transition-all" onClick={() => {dispatch({type: 'language', language: 'english'})}}>english</button>
-              <button className="rounded-full hover:bg-primary hover:text-white border-[1px] border-zinc-800 mt-2 py-1 px-3 transition-all" onClick={() => {dispatch({type: 'language', language: 'spanish'})}}>spanish</button>
+            <button className="rounded-full hover:bg-primary hover:text-white border-[1px] border-zinc-800 mt-2 py-1 px-3 transition-all" onClick={() => {dispatch({type: 'language', language: 'english'})}}>English</button>
+            <button className="rounded-full hover:bg-primary hover:text-white border-[1px] border-zinc-800 mt-2 py-1 px-3 transition-all" onClick={() => {dispatch({type: 'language', language: 'spanish'})}}>Español</button>
               
             </div>
         </div>
