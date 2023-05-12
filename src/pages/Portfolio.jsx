@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { ConfigContext } from "../context/configContext";
 import { layout } from "../style";
-import { portfolio } from "../constants";
+import { portfolio, proyectos } from "../constants";
 const Portfolio = () => {
   const { state } = useContext(ConfigContext);
   const colorstate = state.color;
@@ -26,7 +26,8 @@ const Portfolio = () => {
 
               <div>
                 <ul className="w-full flex flex-wrap gap-5 gap-y-10 justify-center px-6">
-                  {portfolio.map((item) => (
+                 {state.language === 'english' ? 
+                 <>{portfolio.map((item) => (
                     <li
                       key={`${item.name}`}
                       className="responsive-li-portfolio"
@@ -50,29 +51,34 @@ const Portfolio = () => {
                         </div>
                       </a>
                     </li>
-                  ))}
+                  ))}</>: <>{proyectos.map((item) => (
+                    <li
+                      key={`${item.name}`}
+                      className="responsive-li-portfolio"
+                    >
+                      <a
+                      target="_blank"
+                      rel="noopener"
+                        href={`${item.link}`}
+                      >
+
+                          <img
+                            className="block w-full h-48 object-cover"
+                            src={`${item.image}` }
+                          />
+                          <div className="bg-zinc-800 rounded-b-lg p-5">
+                            <h5 className="font-poppins font-semibold text-2xl mb-4">
+                              {item.name}
+                            </h5>
+                            <p className="text-lg font-medium leading-7">{item.description}</p>
+        
+                        </div>
+                      </a>
+                    </li>
+                  ))}</> }
+                 
+                  
                 </ul>
-                {/* <div className="border-2 border-cyan-500">
-                  <img className="block w-full h-48 object-cover" src={image} />
-                  <div className="bg-slate-800 p-5">
-                    <h5 className="font-poppins text-lg mb-4">post title</h5>
-                    <p>post content</p>
-                  </div>
-                </div>
-                <div className="border-2 border-cyan-500">
-                  <img className="block w-full h-48 object-cover" src={image} />
-                  <div className="bg-slate-800 p-5">
-                    <h5 className="font-poppins text-lg mb-4">post title</h5>
-                    <p>post content</p>
-                  </div>
-                </div>
-                <div className="border-2 border-cyan-500">
-                  <img className="block w-full h-48 object-cover" src={image} />
-                  <div className="bg-slate-800 p-5">
-                    <h5 className="font-poppins text-lg mb-4">post title</h5>
-                    <p>post content</p>
-                  </div>
-                </div> */}
               </div>
             </div>
           </div>
