@@ -413,17 +413,39 @@ export const services = [
   },
   {
     name: 'SEO optimization',
-    description: "Maximize your website's SEO! Boost rankings, drive organic traffic, and enhance online visibility with my expert SEO optimization service. Let's grow your online presence and business with tailored strategies. #SEOOptimization #OrganicTraffic #OnlineVisibility #BusinessGrowth",
+    description: "Maximize your website's SEO! Boost rankings, drive organic traffic, and enhance online visibility with my SEO optimization service. Let's grow your online presence and business with tailored strategies. #SEOOptimization #OrganicTraffic #OnlineVisibility #BusinessGrowth",
     image: 'SEO-pana'
   },
   {
     name: 'Photo and Video editing',
-    description: "Transform your visual content with my professional photo and video editing service! From retouching and enhancing photos to creating stunning videos, I'll bring your vision to life. Let's create captivating visuals that make a lasting impression and elevate your brand! #PhotoEditing #VideoEditing #VisualTransformation #BrandElevation",
+    description: "Transform your visual content with my photo and video editing service! From retouching and enhancing photos to creating stunning videos, I'll bring your vision to life. Let's create captivating visuals that make a lasting impression and elevate your brand! #PhotoEditing #VideoEditing #VisualTransformation #BrandElevation",
     image: 'Fashion_blogging-rafiki'
   },
   {
     name: 'Web Maintenance',
     description: "Ensure a smooth website with my reliable web maintenance service! From updates to bug fixes, I'll handle the technical details so you can focus on your business. Let's keep your site secure and up-to-date for a seamless online experience! #WebMaintenance #ReliableService #Updates #BugFixes #SecureWebsite",
+    image: 'Under_construction-amico'
+  }
+]
+export const servicios = [
+  {
+    name: 'Desarrollo Web',
+    description: "¡Creo sitios web increíbles! Me enfoco en diseños amigables para el usuario con características interactivas. ¡Creemos una presencia en línea destacada! #DesarrolladorWeb #ExperienciaDeUsuario #DiseñoInteractivo",
+    image: 'Development-cuate'
+  },
+  {
+    name: 'Optimizacion SEO',
+    description: "¡Maximiza el SEO de tu sitio web! Impulsa tus clasificaciones, aumenta el tráfico orgánico y mejora la visibilidad en línea con mis servicios de optimización SEO. Vamos a hacer crecer tu presencia en línea y tu negocio con estrategias personalizadas. #OptimizaciónSEO #TráficoOrgánico #VisibilidadEnLínea #CrecimientoEmpresarial",
+    image: 'SEO-pana'
+  },
+  {
+    name: 'Edicion de fotos y videos',
+    description: "¡Transforma tu contenido visual con mis servicios de edición de fotos y videos! Desde retocar y mejorar fotos hasta crear videos impresionantes, daré vida a tu visión. ¡Creemos imágenes cautivadoras que dejen una impresión duradera y eleven tu marca! #EdiciónDeFotos #EdiciónDeVideos #TransformaciónVisual #ElevaciónDeMarca",
+    image: 'Fashion_blogging-rafiki'
+  },
+  {
+    name: 'Mantenimiento Web',
+    description: "¡Asegura un sitio web fluido con mi confiable servicio de mantenimiento web! Desde actualizaciones hasta correcciones de errores, me encargaré de los detalles técnicos para que puedas concentrarte en tu negocio. ¡Mantengamos tu sitio seguro y actualizado para una experiencia en línea sin problemas! #MantenimientoWeb #ServicioConfiable #Actualizaciones #CorreccionesDeErrores #SitioWebSeguro",
     image: 'Under_construction-amico'
   }
 ]
@@ -456,6 +478,38 @@ export const portfolio = [
   {
     name: 'Montilla Coffeeshop',
     description: 'landing page template for a coffeeshop, made with pure html css and Javascript',
+    image: montilla,
+    link: 'https://xeuz27.github.io/montillacoffeshop/'
+  }
+]
+export const proyectos = [
+  {
+    name: 'Por Tu Compra USA',
+    description: 'Aplicación empresarial creada con React, Firebase, Node.js y MySQL. Esta aplicación está diseñada para administradores de un negocio de puerta a puerta, con el fin de permitir a los clientes buscar su paquete personal, ver su estado y qué productos se encuentran dentro del paquete que se les está enviando.',
+    image: portucomprausa,
+    link: 'https://portucomprausa.vercel.app/#/home'
+  },
+  {
+    name: 'Hoobank modern UI',
+    description: 'Interfaz de usuario moderna para una página de inicio de un banco, creada utilizando React y CSS con Tailwind CSS.',
+    image: hoobank,
+    link: 'https://hoobank-modern-ui-landing-page.vercel.app'
+  },
+  {
+    name: 'Sumz AI',
+    description: 'Proyecto de React que utiliza react-redux para obtener datos de una API de RapidAPI, el cual extrae información de un artículo en una página web y luego lo resume utilizando inteligencia artificial. El estilo CSS está hecho con TailwindCSS.',
+    image: sumz,
+    link: 'https://sumz-ai.vercel.app/'
+  },
+  {
+    name: 'edgeledger Lawyer Firm',
+    description: 'Página de inicio con fines educativos para un despacho de abogados, creada únicamente con HTML, CSS y JavaScript.',
+    image: edgeledger,
+    link: 'https://xeuz27.github.io/edgeledger-website/'
+  },
+  {
+    name: 'Montilla Coffeeshop',
+    description: 'Plantilla de página de inicio para una cafetería, creada con HTML, CSS y JavaScript puros.',
     image: montilla,
     link: 'https://xeuz27.github.io/montillacoffeshop/'
   }
