@@ -7,6 +7,7 @@ import { IconComponent } from "../component";
 
 const Aboutme = () => {
   const { state } = useContext(ConfigContext);
+  const { dispatch } = useContext(ConfigContext);
   const colorstate = state.color;
   return (
     <>
@@ -18,7 +19,9 @@ const Aboutme = () => {
             <motion.div className="container max-w-7xl m-auto">
               <motion.div className="flex flex-wrap">
                 <div className="text-inherit font-rubik font-semibold text-5xl my-8 pl-4">
-                  <h2>{state.language === 'english' ? 'About Me' : 'Sobre mi'}</h2>
+                  <h2>
+                    {state.language === "english" ? "About Me" : "Sobre mi"}
+                  </h2>
                   <div
                     id="before-after"
                     className={`relative bg-${colorstate}`}
@@ -29,14 +32,14 @@ const Aboutme = () => {
                 <h3 className="text-3xl font-medium mb-7">
                   {state.language === "english" ? (
                     <>
-                      I'm {aboutMe.name} a{" "}
+                      I'm {aboutMe.name} a {' '}
                       <span className={`span-${colorstate}`}>
                         Web Developer
                       </span>
                     </>
                   ) : (
                     <>
-                      Soy {aboutMe.name} un{" "}
+                      Soy {aboutMe.name} un {' '}
                       <span className={`span-${colorstate}`}>
                         Desarrollador Web
                       </span>
@@ -80,8 +83,23 @@ const Aboutme = () => {
                       )}
                     </ul>
                     <div className="flex justify-evenly mt-6 pt-3">
-                      <button className={`text-primary px-4 py-2 rounded-3xl font-poppins text-base font-semibold bg-${colorstate}`}> {state.language === 'english' ? 'Hire Me' : 'contrátame' } </button>
-                      <button className={`text-primary px-4 py-2 rounded-3xl font-poppins text-base font-semibold bg-${colorstate}`}> {state.language === 'english' ? 'See CV' : 'Ver CV'} </button>
+                      <button
+                        onClick={() =>
+                          dispatch({ type: "page", page: 'Contact me' })
+                        }
+                        className={`text-primary px-4 py-2 rounded-3xl font-poppins text-base font-semibold bg-${colorstate}`}
+                      >
+                        {state.language === "english"
+                          ? "Hire Me"
+                          : "contrátame"}
+                      </button>
+                      <button
+                        className={`text-primary px-4 py-2 rounded-3xl font-poppins text-base font-semibold bg-${colorstate}`}
+                      >
+                        {state.language === "english"
+                          ? "See CV"
+                          : "Ver CV"}
+                      </button>
                     </div>
                   </div>
                   <div className="w-full md:max-w-[60%] px-4">
