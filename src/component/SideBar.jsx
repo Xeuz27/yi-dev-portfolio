@@ -71,7 +71,14 @@ const Sidebar = () => {
             </>
           )}
         </ul>
-        <p className="text-lg md:text-base text-white font-medium font-poppins absolute bottom-0 left-[30px] mb-8 pr-[30px]">
+        <a
+          className="text-sm text-white font-medium font-poppins"
+          href="https://devfolio.alsiam.com/"
+          target="_blank"
+        >
+          inspired by Alsiam Devfolio
+        </a>
+        <p className="text-lg md:text-sm text-white font-medium font-poppins absolute bottom-0 left-[30px] mb-8 pr-[30px]">
           &copy; 2023 All Rights Reserved By Jesus Gutierrez
         </p>
       </motion.aside>
