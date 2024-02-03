@@ -45,15 +45,17 @@ body {
 }
 .responsive-li-portfolio {
   width: clamp(285px, 45%, 320px);
+  border: 1px solid gray;
+  height: fit-content;
 }
-
+.responsive-li-portfolio div {
+  height: 100%;
+}
 
 .Development-cuate {
   height: 250px;
   width: 100%;
 }
-
-
 
 /*--bg for before and afters and btns--*/
 .bg-blue {
@@ -70,7 +72,6 @@ body {
   background-color: var(--color-config-violet);
 }
 .bg-violet:hover {
-  
   filter: brightness(0.7);
   background-color: var(--color-config-violet);
 }
@@ -106,8 +107,6 @@ body {
 .bg-black {
   background-color: #222222;
 }
-
-
 
 /* spans color */
 .span-blue {
@@ -147,23 +146,21 @@ body {
   transition: 0.3s all;
 }
 
-
-.border-b-green{
+.border-b-green {
   border-bottom: 1px solid var(--color-config-green);
 }
-.border-b-blue{
+.border-b-blue {
   border-bottom: 1px solid var(--color-config-blue);
 }
-.border-b-violet{
+.border-b-violet {
   border-bottom: 1px solid var(--color-config-violet);
 }
-.border-b-red{
+.border-b-red {
   border-bottom: 1px solid var(--color-config-red);
 }
-.border-b-orange{
+.border-b-orange {
   border-bottom: 1px solid var(--color-config-orange);
 }
-
 
 #before-after::before {
   content: "";
@@ -187,14 +184,14 @@ body {
   width: 50px;
   background-color: inherit;
 }
-.iconconfig{
+.iconconfig {
   width: 32px;
   height: 32px;
   color: white;
   -webkit-animation: spin 3s linear infinite;
   animation: spin 3s linear infinite;
 }
-.iconmenu{
+.iconmenu {
   width: 32px;
   height: 32px;
   color: white;
@@ -221,35 +218,34 @@ body {
 }
 *::-webkit-scrollbar {
   width: 3px;
-  height:4px;
+  height: 4px;
 }
 
 *::-webkit-scrollbar-track {
   background-color: #333;
-
 }
 
 *::-webkit-scrollbar-thumb {
   background: #686868;
-  border-radius:500px;
+  border-radius: 500px;
 }
 *::-webkit-scrollbar-thumb:hover {
   background: #b3b3b3;
 }
-.responsive-li-icons:hover .shadow-blue{
-  filter: drop-shadow( 0px 0px 5px var(--color-config-blue));
+.responsive-li-icons:hover .shadow-blue {
+  filter: drop-shadow(0px 0px 5px var(--color-config-blue));
 }
-.responsive-li-icons:hover .shadow-green{
-  filter: drop-shadow( 0px 0px 5px var(--color-config-green));
+.responsive-li-icons:hover .shadow-green {
+  filter: drop-shadow(0px 0px 5px var(--color-config-green));
 }
-.responsive-li-icons:hover .shadow-violet{
-  filter: drop-shadow( 0px 0px 5px var(--color-config-violet));
+.responsive-li-icons:hover .shadow-violet {
+  filter: drop-shadow(0px 0px 5px var(--color-config-violet));
 }
-.responsive-li-icons:hover .shadow-orange{
-  filter: drop-shadow( 0px 0px 5px var(--color-config-orange));
+.responsive-li-icons:hover .shadow-orange {
+  filter: drop-shadow(0px 0px 5px var(--color-config-orange));
 }
-.responsive-li-icons:hover .shadow-red{
-  filter: drop-shadow( 0px 0px 5px var(--color-config-red));
+.responsive-li-icons:hover .shadow-red {
+  filter: drop-shadow(0px 0px 5px var(--color-config-red));
 }
 
 .contact-form {
@@ -262,13 +258,12 @@ body {
   flex: 0 0 50%;
   max-width: 50%;
 }
-@media screen and (max-width: 620px ) {
+@media screen and (max-width: 620px) {
   .contact-form .col-6 {
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
   }
-  
 }
 .contact-form .col-12 {
   -ms-flex: 0 0 100%;
@@ -310,12 +305,12 @@ body {
   padding-right: 15px;
 }
 
-#sidebar-btn.open  div:first-child {
-  transform: translateX(-4px) rotate(-38deg)
+#sidebar-btn.open div:first-child {
+  transform: translateX(-4px) rotate(-38deg);
 }
-#sidebar-btn.open  div:nth-child(2) {
+#sidebar-btn.open div:nth-child(2) {
   opacity: 0;
 }
-#sidebar-btn.open  div:nth-child(3) {
+#sidebar-btn.open div:nth-child(3) {
   transform: translateX(-4px) rotate(38deg);
 }
