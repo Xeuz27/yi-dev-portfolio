@@ -1,12 +1,19 @@
-import {GrReactjs, GrMysql } from 'react-icons/gr';
-import {IoLogoCss3, IoLogoNodejs} from 'react-icons/io'
-import {TbBrandFramerMotion} from 'react-icons/tb'
-import {SiExpress, SiTailwindcss, SiGithub, SiFirebase, SiHtml5, SiJavascript} from 'react-icons/si'
-import portucomprausa from '../assets/screencapture-portucomprausa-vercel-app-2023-04-24-15_13_41.png'
-import hoobank from '../assets//screencapture-hoobank-modern-ui-landing-page-vercel-app-2023-04-24-15_15_51.png'
-import edgeledger from '../assets/screencapture-xeuz27-github-io-edgeledger-website-2023-04-24-15_16_30.png'
-import montilla from '../assets/screencapture-xeuz27-github-io-montillacoffeshop-2023-04-24-15_14_44.png'
-import sumz from '../assets/screencapture-sumz-ai-vercel-app-2023-04-24-21_36_46.png'
+import { GrReactjs, GrMysql } from "react-icons/gr";
+import { IoLogoCss3, IoLogoNodejs } from "react-icons/io";
+import { TbBrandFramerMotion } from "react-icons/tb";
+import {
+  SiExpress,
+  SiTailwindcss,
+  SiGithub,
+  SiFirebase,
+  SiHtml5,
+  SiJavascript,
+} from "react-icons/si";
+import portucomprausa from "../assets/screencapture-portucomprausa-vercel-app-2023-04-24-15_13_41.png";
+import hoobank from "../assets//screencapture-hoobank-modern-ui-landing-page-vercel-app-2023-04-24-15_15_51.png";
+import edgeledger from "../assets/screencapture-xeuz27-github-io-edgeledger-website-2023-04-24-15_16_30.png";
+import montilla from "../assets/screencapture-xeuz27-github-io-montillacoffeshop-2023-04-24-15_14_44.png";
+import sumz from "../assets/screencapture-sumz-ai-vercel-app-2023-04-24-21_36_46.png";
 export const navLinksEnglish = [
   {
     id: "Home",
@@ -260,19 +267,9 @@ export const navLinksSpanish = [
 
 export const aboutMeEnglish = [
   {
-    id: "about-1",
-    title: "BirthDay",
-    content: " april 27th, 1999",
-  },
-  {
-    id: "about-2",
-    title: "Age",
-    content: " 24",
-  },
-  {
     id: "about-3",
     title: "Email",
-    content: " jesusg.1301.jg@gmail.com",
+    content: " yidev27@gmail.com",
   },
   {
     id: "about-4",
@@ -299,22 +296,12 @@ export const aboutMeEnglish = [
     title: "Freelance",
     content: " Available",
   },
-]
+];
 export const aboutMeSpanish = [
-  {
-    id: "about-1",
-    title: "Cumpleaños",
-    content: " 27 de abril de 1999",
-  },
-  {
-    id: "about-2",
-    title: "Edad",
-    content: " 24",
-  },
   {
     id: "about-3",
     title: "Correo",
-    content: " jesusg.1301.jg@gmail.com",
+    content: "yidev27@gmail.com",
   },
   {
     id: "about-4",
@@ -341,7 +328,7 @@ export const aboutMeSpanish = [
     title: "Independiente",
     content: " Disponible",
   },
-]
+];
 
 export const aboutMe = {
   name: "Jesus Gutierrez",
@@ -349,8 +336,7 @@ export const aboutMe = {
     "Hello! My name is Jesus Gutierrez. I am a Web Developer and I'm very passionate and dedicated to my work. With 2 years experience as a Web Developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the making process, from discussion to elaboration.",
   descripcion:
     "Hola! Mi nombre es Jesus Gutierrez. Soy Desarrollador Web y soy bastante apasionado y dedicado a mi trabajo. Con 2 años de experiencia como desarrollador web, he obtenido las habilidades y conocimientos necesarios para hacer de tu proyecto un Exito!. Disfruto cada parte del proceso de desarrollo, desde discutir las ideas hasta la elaboracion del mismo.",
-  cumpleanos: "27 de abril de 1999",
-  email: "jesusg.1301.jg@gmail.com",
+  email: "yidev27@gmail.com",
   phone: "+58 414 617-2019",
   city: "Maracaibo",
   country: "Venezuela",
@@ -407,110 +393,128 @@ export const skills = [
 
 export const services = [
   {
-    name: 'Web Development',
-    description: "I create amazing websites! I focus on user-friendly designs with interactive features. Let's create an outstanding online presence! #WebDeveloper #UserExperience #InteractiveDesign",
-    image: 'Development-cuate'
+    name: "Web Development",
+    description:
+      "I create amazing websites! I focus on user-friendly designs with interactive features. Let's create an outstanding online presence! #WebDeveloper #UserExperience #InteractiveDesign",
+    image: "Development-cuate",
   },
   {
-    name: 'SEO optimization',
-    description: "Maximize your website's SEO! Boost rankings, drive organic traffic, and enhance online visibility with my SEO optimization service. Let's grow your online presence and business with tailored strategies. #SEOOptimization #OrganicTraffic #OnlineVisibility #BusinessGrowth",
-    image: 'SEO-pana'
+    name: "SEO optimization",
+    description:
+      "Maximize your website's SEO! Boost rankings, drive organic traffic, and enhance online visibility with my SEO optimization service. Let's grow your online presence and business with tailored strategies. #SEOOptimization #OrganicTraffic #OnlineVisibility #BusinessGrowth",
+    image: "SEO-pana",
   },
   {
-    name: 'Photo and Video editing',
-    description: "Transform your visual content with my photo and video editing service! From retouching and enhancing photos to creating stunning videos, I'll bring your vision to life. Let's create captivating visuals that make a lasting impression and elevate your brand! #PhotoEditing #VideoEditing #VisualTransformation #BrandElevation",
-    image: 'Fashion_blogging-rafiki'
+    name: "Photo and Video editing",
+    description:
+      "Transform your visual content with my photo and video editing service! From retouching and enhancing photos to creating stunning videos, I'll bring your vision to life. Let's create captivating visuals that make a lasting impression and elevate your brand! #PhotoEditing #VideoEditing #VisualTransformation #BrandElevation",
+    image: "Fashion_blogging-rafiki",
   },
   {
-    name: 'Web Maintenance',
-    description: "Ensure a smooth website with my reliable web maintenance service! From updates to bug fixes, I'll handle the technical details so you can focus on your business. Let's keep your site secure and up-to-date for a seamless online experience! #WebMaintenance #ReliableService #Updates #BugFixes #SecureWebsite",
-    image: 'Under_construction-amico'
-  }
-]
+    name: "Web Maintenance",
+    description:
+      "Ensure a smooth website with my reliable web maintenance service! From updates to bug fixes, I'll handle the technical details so you can focus on your business. Let's keep your site secure and up-to-date for a seamless online experience! #WebMaintenance #ReliableService #Updates #BugFixes #SecureWebsite",
+    image: "Under_construction-amico",
+  },
+];
 export const servicios = [
   {
-    name: 'Desarrollo Web',
-    description: "¡Creo sitios web increíbles! Me enfoco en diseños amigables para el usuario con características interactivas. ¡Creemos una presencia en línea destacada! #DesarrolladorWeb #ExperienciaDeUsuario #DiseñoInteractivo",
-    image: 'Development-cuate'
+    name: "Desarrollo Web",
+    description:
+      "¡Creo sitios web increíbles! Me enfoco en diseños amigables para el usuario con características interactivas. ¡Creemos una presencia en línea destacada! #DesarrolladorWeb #ExperienciaDeUsuario #DiseñoInteractivo",
+    image: "Development-cuate",
   },
   {
-    name: 'Optimizacion SEO',
-    description: "¡Maximiza el SEO de tu sitio web! Impulsa tus clasificaciones, aumenta el tráfico orgánico y mejora la visibilidad en línea con mis servicios de optimización SEO. Vamos a hacer crecer tu presencia en línea y tu negocio con estrategias personalizadas. #OptimizaciónSEO #TráficoOrgánico #VisibilidadEnLínea #CrecimientoEmpresarial",
-    image: 'SEO-pana'
+    name: "Optimizacion SEO",
+    description:
+      "¡Maximiza el SEO de tu sitio web! Impulsa tus clasificaciones, aumenta el tráfico orgánico y mejora la visibilidad en línea con mis servicios de optimización SEO. Vamos a hacer crecer tu presencia en línea y tu negocio con estrategias personalizadas. #OptimizaciónSEO #TráficoOrgánico #VisibilidadEnLínea #CrecimientoEmpresarial",
+    image: "SEO-pana",
   },
   {
-    name: 'Edicion de fotos y videos',
-    description: "¡Transforma tu contenido visual con mis servicios de edición de fotos y videos! Desde retocar y mejorar fotos hasta crear videos impresionantes, daré vida a tu visión. ¡Creemos imágenes cautivadoras que dejen una impresión duradera y eleven tu marca! #EdiciónDeFotos #EdiciónDeVideos #TransformaciónVisual #ElevaciónDeMarca",
-    image: 'Fashion_blogging-rafiki'
+    name: "Edicion de fotos y videos",
+    description:
+      "¡Transforma tu contenido visual con mis servicios de edición de fotos y videos! Desde retocar y mejorar fotos hasta crear videos impresionantes, daré vida a tu visión. ¡Creemos imágenes cautivadoras que dejen una impresión duradera y eleven tu marca! #EdiciónDeFotos #EdiciónDeVideos #TransformaciónVisual #ElevaciónDeMarca",
+    image: "Fashion_blogging-rafiki",
   },
   {
-    name: 'Mantenimiento Web',
-    description: "¡Asegura un sitio web fluido con mi confiable servicio de mantenimiento web! Desde actualizaciones hasta correcciones de errores, me encargaré de los detalles técnicos para que puedas concentrarte en tu negocio. ¡Mantengamos tu sitio seguro y actualizado para una experiencia en línea sin problemas! #MantenimientoWeb #ServicioConfiable #Actualizaciones #CorreccionesDeErrores #SitioWebSeguro",
-    image: 'Under_construction-amico'
-  }
-]
+    name: "Mantenimiento Web",
+    description:
+      "¡Asegura un sitio web fluido con mi confiable servicio de mantenimiento web! Desde actualizaciones hasta correcciones de errores, me encargaré de los detalles técnicos para que puedas concentrarte en tu negocio. ¡Mantengamos tu sitio seguro y actualizado para una experiencia en línea sin problemas! #MantenimientoWeb #ServicioConfiable #Actualizaciones #CorreccionesDeErrores #SitioWebSeguro",
+    image: "Under_construction-amico",
+  },
+];
 
 export const portfolio = [
   {
-    name: 'Por Tu Compra USA',
-    description: 'business app created with react, firebase, nodejs and mysql. This app is made for administrators of a door to door business type to allow clients to search their personal package, see its status and what products are inside of the package that is being sent to them',
-    image: portucomprausa,
-    link: 'https://portucomprausa.vercel.app/#/home'
-  },
-  {
-    name: 'Hoobank modern UI',
-    description: 'modern ui for a bank landing page, was made using react and css with tailwindcss',
+    name: "Hoobank modern UI",
+    description:
+      "modern ui for a bank landing page, was made using react and css with tailwindcss",
     image: hoobank,
-    link: 'https://hoobank-modern-ui-landing-page.vercel.app'
+    link: "https://hoobank-modern-ui-landing-page.vercel.app",
   },
   {
-    name: 'Sumz AI',
-    description: 'react project making use of react-redux to fetch a rapidAPI endpoint that substract info from an article in a webpage and then summarizes it using Artificial intelligence, css made with tailwindCSS',
+    name: "Sumz AI",
+    description:
+      "react project making use of react-redux to fetch a rapidAPI endpoint that substract info from an article in a webpage and then summarizes it using Artificial intelligence, css made with tailwindCSS",
     image: sumz,
-    link: 'https://sumz-ai.vercel.app/'
+    link: "https://sumz-ai.vercel.app/",
   },
   {
-    name: 'edgeledger Lawyer Firm',
-    description: 'landing page for educational purposes for a lawyer firm, was made purely with html, css and Javascript',
+    name: "Por Tu Compra USA",
+    description:
+      "business app created with react, firebase, nodejs and mysql. This app is made for administrators of a door to door business type to allow clients to search their personal package, see its status and what products are inside of the package that is being sent to them",
+    image: portucomprausa,
+    link: "https://portucomprausa.vercel.app/#/home",
+  },
+  {
+    name: "edgeledger Lawyer Firm",
+    description:
+      "landing page for educational purposes for a lawyer firm, was made purely with html, css and Javascript",
     image: edgeledger,
-    link: 'https://xeuz27.github.io/edgeledger-website/'
+    link: "https://xeuz27.github.io/edgeledger-website/",
   },
   {
-    name: 'Montilla Coffeeshop',
-    description: 'landing page template for a coffeeshop, made with pure html css and Javascript',
+    name: "Montilla Coffeeshop",
+    description:
+      "landing page template for a coffeeshop, made with pure html css and Javascript",
     image: montilla,
-    link: 'https://xeuz27.github.io/montillacoffeshop/'
-  }
-]
+    link: "https://xeuz27.github.io/montillacoffeshop/",
+  },
+];
 export const proyectos = [
   {
-    name: 'Por Tu Compra USA',
-    description: 'Aplicación empresarial creada con React, Firebase, Node.js y MySQL. Esta aplicación está diseñada para administradores de un negocio de puerta a puerta, con el fin de permitir a los clientes buscar su paquete personal, ver su estado y qué productos se encuentran dentro del paquete que se les está enviando.',
-    image: portucomprausa,
-    link: 'https://portucomprausa.vercel.app/#/home'
-  },
-  {
-    name: 'Hoobank modern UI',
-    description: 'Interfaz de usuario moderna para una página de inicio de un banco, creada utilizando React y CSS con Tailwind CSS.',
+    name: "Hoobank modern UI",
+    description:
+      "Interfaz de usuario moderna para una página de inicio de un banco, creada utilizando React y CSS con Tailwind CSS.",
     image: hoobank,
-    link: 'https://hoobank-modern-ui-landing-page.vercel.app'
+    link: "https://hoobank-modern-ui-landing-page.vercel.app",
   },
   {
-    name: 'Sumz AI',
-    description: 'Proyecto de React que utiliza react-redux para obtener datos de una API de RapidAPI, el cual extrae información de un artículo en una página web y luego lo resume utilizando inteligencia artificial. El estilo CSS está hecho con TailwindCSS.',
+    name: "Sumz AI",
+    description:
+      "Proyecto de React que utiliza react-redux para obtener datos de una API de RapidAPI, el cual extrae información de un artículo en una página web y luego lo resume utilizando inteligencia artificial. El estilo CSS está hecho con TailwindCSS.",
     image: sumz,
-    link: 'https://sumz-ai.vercel.app/'
+    link: "https://sumz-ai.vercel.app/",
   },
   {
-    name: 'edgeledger Lawyer Firm',
-    description: 'Página de inicio con fines educativos para un despacho de abogados, creada únicamente con HTML, CSS y JavaScript.',
+    name: "Por Tu Compra USA",
+    description:
+      "Aplicación empresarial creada con React, Firebase, Node.js y MySQL. Esta aplicación está diseñada para administradores de un negocio de puerta a puerta, con el fin de permitir a los clientes buscar su paquete personal, ver su estado y qué productos se encuentran dentro del paquete que se les está enviando.",
+    image: portucomprausa,
+    link: "https://portucomprausa.vercel.app/#/home",
+  },
+  {
+    name: "edgeledger Lawyer Firm",
+    description:
+      "Página de inicio con fines educativos para un despacho de abogados, creada únicamente con HTML, CSS y JavaScript.",
     image: edgeledger,
-    link: 'https://xeuz27.github.io/edgeledger-website/'
+    link: "https://xeuz27.github.io/edgeledger-website/",
   },
   {
-    name: 'Montilla Coffeeshop',
-    description: 'Plantilla de página de inicio para una cafetería, creada con HTML, CSS y JavaScript puros.',
+    name: "Montilla Coffeeshop",
+    description:
+      "Plantilla de página de inicio para una cafetería, creada con HTML, CSS y JavaScript puros.",
     image: montilla,
-    link: 'https://xeuz27.github.io/montillacoffeshop/'
-  }
-]
+    link: "https://xeuz27.github.io/montillacoffeshop/",
+  },
+];
